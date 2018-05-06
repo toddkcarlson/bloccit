@@ -51,7 +51,7 @@
  gem 'bcrypt', git: 'git://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
  group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 2.14.1'
   gem 'rails-controller-testing'
   gem 'shoulda'
  end
