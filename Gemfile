@@ -48,7 +48,7 @@
  gem 'bootstrap-sass'
 
  # Used for encrypting passwords
- gem 'bcrypt' 
+ gem 'bcrypt', git: 'git://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
  group :development, :test do
   gem 'rspec-rails', '~> 3.0'
