@@ -11,4 +11,3 @@ RSpec.describe Answer, type: :model do
      end
    end
 end
-
