@@ -1,0 +1,20 @@
+current directory: C:/Sites/bloccit/ruby/2.3.0/bundler/gems/bcrypt-ruby-b293ecf81c82/ext/mri
+C:/RailsInstaller/Ruby2.3.3/bin/ruby.exe -r ./siteconf20180506-19344-uv152d.rb extconf.rb
+creating Makefile
+
+current directory: C:/Sites/bloccit/ruby/2.3.0/bundler/gems/bcrypt-ruby-b293ecf81c82/ext/mri
+make "DESTDIR=" clean
+
+current directory: C:/Sites/bloccit/ruby/2.3.0/bundler/gems/bcrypt-ruby-b293ecf81c82/ext/mri
+make "DESTDIR="
+generating bcrypt_ext-i386-mingw32.def
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: C:/Sites/bloccit/ruby/2.3.0/bundler/gems/bcrypt-ruby-b293ecf81c82/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20180506-19344-1asip77
