@@ -47,6 +47,9 @@
 
  gem 'bootstrap-sass'
 
+ # Used for encrypting passwords
+ gem 'bcrypt' 
+
  group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'rails-controller-testing'
