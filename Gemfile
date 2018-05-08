@@ -50,6 +50,8 @@
  # Used for encrypting passwords
  gem 'bcrypt', git: 'git://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
+ gem 'rake', '< 11.0'
+
  group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'
   gem 'rails-controller-testing'
