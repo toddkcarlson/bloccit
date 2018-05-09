@@ -27,6 +27,12 @@ RSpec.describe User, type: :model do
       user.save  #help from video - save has been completed
       expect(user.name).to eq "Bloccit User"  #I got this part on my own. I forgot to create data for this "it block" and I didn't know how to tell the "it block" to save
     end
+
+    it "should format the user's name" do
+      user.name "bloc user"
+      user.save
+      expect(user.name).to eq "Bloc User"
+    end
   end
 
   describe "invalid user" do
