@@ -44,9 +44,18 @@
  unique_post = Post.find_or_create_by!(title: "Todd Title", body: "Toddy Body")
  Comment.find_or_create_by!(post: unique_post, body:"No comment")
  
- user = User.first
- user.update_attributes!(
-   email: 'youremail.com', # replace this with your personal email
+ # Create an admin user
+ admin = User.create!(
+   name:     'Admin User',
+   email:    'admin@example.com',
+   password: 'helloworld',
+   role:     'admin'
+ )
+ 
+ # Create a member
+ member = User.create!(
+   name:     'Member User',
+   email:    'member@example.com',
    password: 'helloworld'
  )
 
