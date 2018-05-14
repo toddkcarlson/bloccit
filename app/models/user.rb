@@ -3,6 +3,7 @@ class User < ApplicationRecord
  # #2
    before_save { self.email = email.downcase if email.present? }
    before_save { self.role ||= :member }
+   before_save { self.role ||= :moderator }   
  # #3
    validates :name, length: { minimum: 1, maximum: 100 }, presence: true
  # #4
@@ -16,5 +17,5 @@ class User < ApplicationRecord
 
  # #6
    has_secure_password
-   enum role: [:member, :admin]   	
+   enum role: [:member, :admin, :moderator]   	
 end
