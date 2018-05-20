@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SessionsController do
-   let(:my_user) { User.create!(name: "Blochead", email: "blochead@bloc.io", password: "password") }
+   let(:my_user) { create(:user) }
  
    describe "GET new" do
      it "returns http success" do
